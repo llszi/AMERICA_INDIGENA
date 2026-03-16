@@ -1,0 +1,151 @@
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interativo: A Geografia da América Pré-Colombiana e a Conquista</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0 10px 0;
+            border-bottom: 2px solid #8b5a2b; /* Cor terrosa */
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 2.2em;
+        }
+        .subtitle {
+            font-size: 1.1em;
+            color: #555;
+            font-style: italic;
+        }
+        .storymap-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 65%; /* Proporção para uma boa visualização do mapa */
+            margin: 25px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .storymap-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .info-section {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+        h2 {
+            color: #8b5a2b;
+            border-left: 5px solid #8b5a2b;
+            padding-left: 15px;
+            margin-top: 0;
+        }
+        .reference {
+            background-color: #e9e9e9;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 0.95em;
+            border-left: 4px solid #2c3e50;
+        }
+        .reference p {
+            margin: 5px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px dashed #ccc;
+        }
+        .note {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗺️ A Geografia da América Pré-Colombiana e a Conquista</h1>
+            <div class="subtitle">Uma narrativa interativa baseada na obra de Nathan Wachtel</div>
+        </header>
+
+        <!-- AVISO: O mapa abaixo é incorporado diretamente do servidor do KnightLab -->
+        <div class="storymap-container">
+            <iframe 
+                src="https://uploads.knightlab.com/storymapjs/06c22fa43c0475124b7c7b102cd1df56/a-geografia-da-america-pre-colombiana-e-a-conquista/index.html" 
+                allowfullscreen 
+                loading="lazy"
+                title="StoryMapJS: A Geografia da América Pré-Colombiana e a Conquista">
+            </iframe>
+        </div>
+
+        <div class="info-section">
+            <h2>📚 Sobre este Mapa</h2>
+            <p>Este mapa interativo foi desenvolvido como material de apoio para estudos acadêmicos sobre a conquista espanhola da América. Ele localiza geograficamente os principais cenários, impérios, fronteiras de resistência e centros econômicos coloniais descritos no capítulo de Nathan Wachtel, utilizando citações diretas do texto para embasar cada ponto.</p>
+            <p>O objetivo é oferecer uma ferramenta visual que auxilie na compreensão da complexa geografia histórica da América pré-colombiana e do impacto da invasão europeia, conforme analisado pelo autor.</p>
+            
+            <h2 style="margin-top: 30px;">📖 Fonte Primária (Referência Completa)</h2>
+            <div class="reference">
+                <p><strong>WACHTEL, Nathan.</strong> Os Índios e a Conquista Espanhola. In: BETHELL, Leslie (ed.). <strong>História da América Latina: Volume I - América Latina Colonial.</strong> São Paulo: Editora da Universidade de São Paulo, 1998. p. 193-240.</p>
+                <p>↳ <em>Todas as citações e localizações apresentadas no mapa foram extraídas deste capítulo, com os números de página indicados em cada slide.</em></p>
+            </div>
+
+            <div class="note">
+                <strong>🎓 Uso acadêmico:</strong> Este material é recomendado para disciplinas de História da América Colonial, Etnohistória e disciplinas afins na UFRGS e demais universidades. A estrutura segue o rigor da citação direta das fontes para permitir a análise e o debate em sala de aula.
+            </div>
+
+            <h2>📍 Localizações em Destaque</h2>
+            <ul style="columns: 2; list-style-type: square; padding-left: 20px;">
+                <li>🌎 Visão Geral: O Mundo Indígena</li>
+                <li>🇲🇽 Tenochtitlán (Coração Asteca)</li>
+                <li>🇵🇪 Cuzco (Eixo Inca)</li>
+                <li>🤝 Tlaxcala (Aliados Indígenas)</li>
+                <li>🏝️ Hispaniola (Primeiro Impacto)</li>
+                <li>⛏️ Potosí (Epicentro Mineiro)</li>
+                <li>🏛️ La Plata (Centro Administrativo)</li>
+                <li>🏔️ Vilcabamba (Refúgio Neo-Inca)</li>
+                <li>🌊 Rio Bío-Bío (Fronteira Araucana)</li>
+                <li>🌵 Cordilheira dos Chiriguanos</li>
+                <li>🏜️ Gran Chichimeca (Fronteira Norte)</li>
+                <li>⚰️ Retorno a Cuzco (Fim de um Mundo)</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Mapa criado com a ferramenta <a href="https://storymap.knightlab.com/" target="_blank" rel="noopener noreferrer">StoryMapJS</a> do Knight Lab. | Conteúdo baseado em pesquisa acadêmica. | Hospedado no GitHub para fins educacionais.</p>
+        </div>
+    </div>
+</body>
+</html>
